@@ -14,7 +14,7 @@ import lombok.Setter;
 @Table(name = "tb_order_item")
 public class OrderItem {
   @EmbeddedId
-  private final OrderItemPK id = new OrderItemPK();
+  private OrderItemPK id = new OrderItemPK();
   
   private Integer quantity;
   private Double price;
